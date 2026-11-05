@@ -128,3 +128,4 @@ export const FarmlandHero: React.FC<FarmlandHeroProps> = ({ onOpenSiteVisit }) =
 };
 
 export default FarmlandHero;
+

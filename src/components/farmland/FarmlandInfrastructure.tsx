@@ -106,3 +106,4 @@ export const FarmlandInfrastructure: React.FC = () => {
 };
 
 export default FarmlandInfrastructure;
+

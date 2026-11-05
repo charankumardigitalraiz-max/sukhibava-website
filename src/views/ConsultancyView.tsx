@@ -72,7 +72,7 @@ Please guide me on organic conversion, crop selection, and setup.`;
       {/* <ConsultancyAdvantages /> */}
 
       {/* 5. Direct Consultation Request Form */}
-      <ConsultancyForm
+      {/* <ConsultancyForm
         formData={formData}
         setFormData={setFormData}
         isSubmitted={isSubmitted}
@@ -80,6 +80,10 @@ Please guide me on organic conversion, crop selection, and setup.`;
         onSubmit={handleSubmit}
       />
 
-      {/* 6. Weekend Inspection Tour CTA Banner */}
-      <ConsultancyTourBanner onOpenSiteVisit={onOpenSiteVisit} />
-    </di
+     
+      <ConsultancyTourBanner onOpenSiteVisit={onOpenSiteVisit} /> */}
+    </div>
+  );
+};
+
+export default ConsultancyView;

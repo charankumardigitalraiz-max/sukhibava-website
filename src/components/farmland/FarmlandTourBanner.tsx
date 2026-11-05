@@ -85,3 +85,4 @@ export const FarmlandTourBanner: React.FC<FarmlandTourBannerProps> = ({ onOpenSi
 };
 
 export default FarmlandTourBanner;
+
