@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JIA Naturals | Traditionally Pressed, Naturally Pure</title>
+<meta name="description" content="JIA Naturals offers traditionally cold-pressed, naturally pure cooking oils and authentic Indian food heritage products.">
+
+<!-- ADDED: Google Fonts Preconnect & Stylesheets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+
+<!-- ADDED: Open Graph Tags -->
+<meta property="og:title" content="JIA Naturals | Traditionally Pressed, Naturally Pure">
+<meta property="og:description" content="JIA Naturals offers traditionally cold-pressed, naturally pure cooking oils and authentic Indian food heritage products.">
+<meta property="og:image" content="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-05_09_10-PM-3.webp">
+<meta property="og:url" content="https://jianaturals.com/">
+<meta property="og:type" content="website">
+
+<!-- ADDED: Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- ADDED: Organization JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JIA Naturals",
+  "url": "https://jianaturals.com/",
+  "logo": "https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-05_09_10-PM-3.webp",
+  "description": "JIA Naturals offers traditionally cold-pressed, naturally pure cooking oils and authentic Indian food heritage products.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-8639199011",
+    "contactType": "Customer Service"
+  }
+}
+</script>
+
+<style>
+/* ==========================================================================
+   CONSOLIDATED & BULLETPROOF PREMIUM CSS (v. Final Production)
+   ========================================================================== */
+:root {
+  --green: #064b3c;
+  --green2: #0b5b49;
+  --deep: #073b30;
+  --cream: #f7f3e9;
+  --paper: #fbfaf5;
+  --white: #fff;
+  /* ACCESSIBILITY FIX: Darkened gold for WCAG AA Contrast compliance */
+  --gold: #8c6716; 
+  --line: #d9d5c9;
+  --text: #24433a;
+  --muted: #5a6863;
+  --shadow-soft: 0 10px 30px rgba(7,59,48,.06);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  margin: 0; background: var(--cream); color: var(--text);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* CSS BREAKOUT HACK TO ELIMINATE WHITE THEME GAPS */
+main {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  display: block;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; outline: none; }
+button { font: inherit; outline: none; border: none; cursor: pointer; }
+
+/* Accessibility Focus States */
+button:focus-visible, a:focus-visible, input:focus-visible { 
+  outline: 2px solid var(--green) !important; outline-offset: 2px !important; 
+}
+
+p { font-size: 16px; line-height: 1.8; margin-top: 0; }
+.section, #home, #oils, #food-products, #story-details, #process-details, #craftsmanship { 
+  scroll-margin-top: 100px; 
+}
+
+.container { width: min(1160px, calc(100% - 40px)); margin: auto; }
+.eyebrow { font-size: 13px; letter-spacing: .20em; text-transform: uppercase; font-weight: 700; color: var(--gold); display: block; margin-bottom: 8px;}
+.section { padding: 80px 0; }
+.section-head { text-align: center; max-width: 650px; margin: 0 auto 40px; }
+h2 { font-family: "Playfair Display", serif; color: var(--green) !important; font-size: clamp(32px, 4vw, 42px); margin: 0 0 10px; line-height: 1.12; }
+h3 { font-size: 23px; line-height: 1.3; margin: 0 0 10px; }
+.divider { width: 44px; height: 1px; background: var(--gold); margin: 16px auto; }
+.section-head p { font-size: 16px; color: var(--muted) !important; line-height: 1.8; }
+.compliance-note { font-size: 11px; font-weight: 700; color: var(--green2); background: rgba(6,75,60,0.05); display: inline-block; padding: 6px 12px; border-radius: 4px; margin-top: 15px; letter-spacing: 0.05em; }
+
+/* Custom Icons */
+.btn-icon { width: 14px; height: 14px; object-fit: contain; flex-shrink: 0; }
+.icon-white { filter: brightness(0) invert(1); }
+
+/* ==========================================================================
+   HERO BANNER - 16:9 ASPECT RATIO + MOBILE ART DIRECTION
+   ========================================================================== */
+.hero { 
+  position: relative; width: 100%; aspect-ratio: 16 / 9;
+  display: flex; align-items: center; background: #efe8d8; overflow: hidden; 
+}
+.hero-art-link { position: absolute; inset: 0; z-index: 1; display: block; }
+
+/* SHARPNESS & HARDWARE ACCELERATION FIX */
+.hero-art { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: right center; 
+  display: block; 
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: crisp-edges; 
+  transform: translateZ(0); 
+}
+
+/* Reduced gradient opacity to let the image shine through clearly */
+.hero-overlay {
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(90deg, rgba(247,243,233,0.85) 0%, rgba(247,243,233,0.5) 40%, rgba(247,243,233,0) 65%);
+}
+
+.hero-copy { position: relative; z-index: 3; width: min(1160px, calc(100% - 40px)); margin: 0 auto; pointer-events: auto; }
+
+/* Tighter max-width forces text to stay cleanly on the left wall, avoiding bottles */
+.hero-text-wrap { max-width: 420px; }
+
+/* Removed blurry white text-shadow for perfectly crisp typography */
+.hero-copy h1 { font-family: "Playfair Display", serif; color: var(--green) !important; font-size: clamp(38px, 5vw, 64px); line-height: 1.05; margin: 10px 0 20px; }
+.hero-copy p { font-size: clamp(15px, 1.5vw, 17px); line-height: 1.7; color: var(--text) !important; margin-bottom: 30px; font-weight: 500;}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px;}
+
+.btn { 
+  background: var(--green) !important; color: #fff !important; padding: 0 24px; min-height: 48px;
+  border-radius: 6px; font-size: 12px; font-weight: 800; letter-spacing: .08em; 
+  text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; justify-content: center; 
+  text-decoration: none !important; border: 1px solid var(--green) !important; transition: all 0.2s ease;
+}
+.btn:hover { background: var(--green2) !important; border-color: var(--green2) !important; transform: translateY(-2px); box-shadow: var(--shadow-soft); }
+
+/* PERFECTED SECONDARY BUTTON (White Background for Visibility) */
+.btn.light { background: #fff !important; color: var(--green) !important; }
+.btn.light:hover { background: var(--green) !important; color: #fff !important; }
+
+.hero-points { display: flex; gap: 24px; flex-wrap: wrap; }
+.hero-point { border-left: 1px solid rgba(6,75,60,.25); padding-left: 15px; }
+.hero-point strong { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--green) !important; }
+.hero-point span { display: block; font-size: 11px; color: var(--text) !important; margin-top: 4px; font-weight: 500;}
+
+/* ==========================================================================
+   PROMISE SECTION
+   ========================================================================== */
+.promise { background: linear-gradient(180deg, #eef4f0, #f7f8f3); padding: 60px 0; }
+.promise-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.promise-item { text-align: center; padding: 35px 20px; border-right: 1px solid var(--line); }
+.promise-item:last-child { border-right: 0; }
+.promise-icon { color: var(--gold); height: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; }
+.promise-item h3 { font-family: "Playfair Display", serif; color: var(--green) !important; font-size: 22px; margin: 0 0 10px;}
+.promise-item p { font-size: 15px; line-height: 1.8; color: var(--muted) !important; margin: 0;}
+
+/* ==========================================================================
+   PRODUCTS SECTION
+   ========================================================================== */
+.oils { background: var(--cream); }
+.product { display: grid; grid-template-columns: 40% 1fr; gap: 40px; min-height: 310px; border-top: 1px solid var(--line); padding: 50px 0; align-items: center; }
+.product.reverse { grid-template-columns: 1fr 40%; }
+.product.reverse .product-media { order: 2; }
+.product.reverse .product-content { order: 1; }
+
+.product-media { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; }
+
+.product-image-wrap {
+  width: 100%; max-width: 360px; aspect-ratio: 4/5; position: relative;
+  display: block; margin: 0 auto; border-radius: 16px; overflow: hidden; 
+  background: var(--white); cursor: pointer;
+  box-shadow: 0 10px 30px rgba(6,75,60,.08); transition: transform .3s ease, box-shadow .3s ease;
+}
+.product-image-wrap:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(6,75,60,.12); }
+
+.product-image, .cert-image-inline { 
+  width: 100%; height: 100%; object-fit: cover; 
+  position: absolute; inset: 0; transition: opacity 0.4s ease; margin: 0;
+}
+.product-image { z-index: 2; opacity: 1; }
+.cert-image-inline { z-index: 1; opacity: 0; }
+
+.product-image-wrap:hover .product-image { opacity: 0; }
+.product-image-wrap:hover .cert-image-inline { opacity: 1; z-index: 3; }
+
+.lab-hint {
+  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+  background: var(--green); color: #fff; border: 2px solid #fff;
+  padding: 8px 18px; border-radius: 25px; font-size: 10px; font-weight: 800;
+  letter-spacing: 0.05em; text-transform: uppercase; z-index: 4; pointer-events: none; 
+  white-space: nowrap; box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.lab-hint::before { content: "Tap for Lab Report"; }
+@media (hover: hover) and (pointer: fine) {
+  .lab-hint::before { content: "Hover for Lab Report"; }
+}
+
+.product-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.product-main { display: flex; flex-direction: column; }
+.product-info { border-left: 1px solid var(--gold); padding-left: 30px; }
+
+.product-number { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 800; margin-bottom: 8px;}
+.product-title { font-family: "Playfair Display", serif; color: var(--green) !important; font-size: 36px; margin: 0 0 10px; }
+.product-desc { font-size: 14px; color: var(--muted) !important; line-height: 1.7; margin: 0 0 20px; }
+.price-label { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--green) !important; font-weight: 800; margin-bottom: 10px; }
+
+.price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.price-option {
+  border: 1px solid var(--line) !important; background: #fff !important; border-radius: 6px; min-height: 54px; padding: 8px 4px;
+  color: var(--green) !important; transition: all 0.2s;
+}
+.price-option:hover, .price-option.active { border-color: var(--green) !important; background: var(--green) !important; color: #fff !important; box-shadow: var(--shadow-soft); }
+.price-size { display: block; font-size: 10px; font-weight: 700; text-align: center; margin-bottom: 4px;}
+.price-amount { display: block; font-size: 11px; font-weight: 800; text-align: center; }
+
+.selected { font-size: 12px; color: var(--muted) !important; margin: 15px 0; }
+.selected strong { font-family: "Playfair Display", serif; font-size: 24px; color: var(--gold); }
+
+.order-row { display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-top: 5px; }
+
+.qty-wrapper { position: relative; display: inline-flex; flex-direction: column; align-items: center; }
+
+.qty { 
+  display: flex; align-items: center; height: 44px; border: 1px solid var(--line) !important; 
+  border-radius: 25px !important; background: #fff !important; overflow: hidden;
+}
+.qty button { 
+  width: 40px; height: 100%; background: transparent !important; color: var(--green) !important; 
+  font-weight: 800 !important; font-size: 18px !important; border: none !important;
+}
+.qty button:hover { background: #eee !important; }
+.qty-value { font-size: 13px; font-weight: 800; width: 30px; text-align: center; color: var(--text) !important; }
+
+/* Fixed Heights match perfectly */
+.add-cart { 
+  height: 44px; min-height: 44px; border-radius: 25px !important; padding: 0 24px !important; border: 0 !important;
+  font-size: 11px !important; font-weight: 800 !important; letter-spacing: .07em !important; text-transform: uppercase !important; 
+  display: inline-flex !important; align-items: center !important; justify-content: center !important; 
+  background-color: var(--green) !important; color: #fff !important; gap: 8px !important; transition: all 0.2s;
+}
+.add-cart:hover { background-color: var(--green2) !important; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(6,75,60,.15); }
+
+.wa-order { 
+  height: 44px; min-height: 44px; border-radius: 25px !important; padding: 0 24px !important; border: 2px solid #128C7E !important;
+  font-size: 11px !important; font-weight: 800 !important; letter-spacing: .07em !important; text-transform: uppercase !important; 
+  display: inline-flex !important; align-items: center !important; justify-content: center !important; 
+  background-color: #fff !important; color: #128C7E !important; gap: 8px !important; transition: all 0.3s ease;
+}
+.wa-order:hover { background-color: #128C7E !important; color: #fff !important; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(18,140,126,.2); }
+
+.info-guide h4 { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--green) !important; margin: 0 0 15px; }
+.info-item { padding: 0 0 12px; margin-bottom: 12px; border-bottom: 1px dashed #d8d8cf; }
+.info-item:last-child { border-bottom: 0; margin-bottom: 0; }
+.info-item strong { display: block; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--green) !important; margin-bottom: 4px; }
+.info-item p { font-size: 14px; line-height: 1.7; color: var(--muted) !important; margin: 0; }
+
+/* ==========================================================================
+   FOOD SECTION
+   ========================================================================== */
+.food-section { background: #f8f4e9; padding: 80px 0; }
+.catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.catalog-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 30px; box-shadow: var(--shadow-soft); }
+.catalog-kicker { font-size: 10px; letter-spacing: .18em; color: var(--gold); font-weight: 800; margin-bottom: 8px;}
+.catalog-card h3 { font-family: "Playfair Display", serif; color: var(--green) !important; font-size: 26px; margin: 0 0 10px; }
+.catalog-card > p { font-size: 13px; color: var(--muted) !important; line-height: 1.6; margin: 0 0 20px; }
+.catalog-card ul { list-style: none; padding: 0; margin: 0; }
+
+.catalog-card li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 16px 0; border-top: 1px dashed #ddd9ce; }
+.food-details { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.food-name { font-size: 13px; color: var(--text) !important; font-weight: 700; }
+.food-weight { font-size: 10px; color: var(--gold) !important; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+.food-price { font-size: 12px; color: var(--green) !important; font-weight: 800;}
+
+.food-add-cart { 
+  background-color: #fff !important; border: 1px solid var(--green) !important; color: var(--green) !important; 
+  border-radius: 20px !important; padding: 0 18px !important; height: 36px !important; font-size: 11px !important; font-weight: 800 !important; 
+  text-transform: uppercase !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; 
+  letter-spacing: 0.05em !important; transition: all 0.2s ease !important; cursor: pointer; text-decoration: none !important;
+}
+.food-add-cart:hover, .food-add-cart:focus, .food-add-cart:active { 
+  background-color: var(--green) !important; color: #fff !important; box-shadow: 0 4px 10px rgba(6,75,60,.15) !important; transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CRAFTSMANSHIP & STORY
+   ========================================================================== */
+.craftsmanship { background: #f8f4e9; }
+.raw-grid { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.raw-card { padding: 30px 20px; border-right: 1px solid var(--line); }
+.raw-card:last-child { border-right: 0; }
+.raw-card strong { display: block; font-family: "Playfair Display", serif; font-size: 22px; color: var(--green); margin-bottom: 7px; }
+.raw-card span { display: block; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.raw-card small { display: block; margin-top: 12px; color: var(--gold); font-size: 10px; letter-spacing: .06em; font-weight: 700; }
+
+/* ==========================================================================
+   ADDED: TEASER SECTION
+   ========================================================================== */
+.teaser-section {
+  background: var(--green);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.teaser-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+}
+.teaser-section:hover .teaser-content {
+  transform: translateY(-4px);
+}
+.teaser-eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: block;
+}
+.teaser-section h2 {
+  color: #fff !important;
+  font-size: clamp(32px, 4vw, 46px);
+  margin: 0 0 15px;
+  line-height: 1.1;
+}
+.teaser-section p {
+  font-size: 16px;
+  color: var(--cream) !important;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+.teaser-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background: url('https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-05_09_10-PM-3.webp') center/cover no-repeat;
+  mix-blend-mode: luminosity;
+  transition: opacity 0.5s ease, transform 3s ease;
+}
+.teaser-section:hover .teaser-bg {
+  opacity: 0.25;
+  transform: scale(1.02);
+}
+
+.story-details { padding: 80px 0; }
+.story-simple { display: grid !important; grid-template-columns: 1.25fr 0.75fr !important; gap: 40px; align-items: stretch; }
+.story-simple > div:first-child { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 40px; }
+.story-simple h3 { font-family: "Playfair Display", serif; color: var(--green); font-size: 28px; margin: 0 0 14px; }
+.story-simple p { font-size: 15px; line-height: 1.8; color: var(--muted); margin-bottom: 15px; }
+.story-facts { display: grid !important; grid-template-columns: 1fr 1fr !important; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.story-facts div { padding: 30px 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; background: #fff;}
+.story-facts strong { font-family: "Playfair Display", serif; font-size: 25px; color: var(--green); }
+.story-facts span { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 6px; }
+
+/* ==========================================================================
+   ADDED: TESTIMONIALS SECTION
+   ========================================================================== */
+.testimonials { background: var(--paper); padding: 80px 0; }
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.testi-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 30px; box-shadow: var(--shadow-soft); text-align: left; }
+.testi-stars { color: var(--gold); margin-bottom: 12px; font-size: 18px; letter-spacing: 2px; }
+.testi-text { font-size: 14.5px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.testi-author { display: block; font-weight: 700; color: var(--green); font-size: 13px; }
+.testi-loc { display: block; font-size: 11px; color: var(--gold); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 4px; }
+
+/* ==========================================================================
+   CART DRAWER - COMPACT POPUP STYLE
+   ========================================================================== */
+.cart-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 999997 !important; backdrop-filter: blur(2px); cursor: pointer; }
+.cart-overlay.open { display: block; }
+
+/* ADDED: iOS SAFE-AREA FIX */
+.cart-drawer { 
+  display: none; position: fixed; right: 24px; bottom: calc(94px + env(safe-area-inset-bottom)); width: 340px; max-width: calc(100vw - 48px); 
+  background: #fff !important; border: 1px solid var(--line); box-shadow: 0 15px 40px rgba(0,0,0,.2) !important; 
+  z-index: 999998 !important; padding: 24px; border-radius: 12px; flex-direction: column; max-height: calc(100vh - 120px); overflow: hidden;
+}
+.cart-drawer.open { display: flex; }
+
+.cart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 12px;}
+.cart-header h3 { font-family: "Playfair Display", serif; color: var(--green) !important; margin: 0; font-size: 22px; }
+.cart-close-btn { background: none !important; border: none !important; font-size: 32px !important; color: var(--muted) !important; cursor: pointer; padding: 0 5px; line-height: 0.8; box-shadow: none !important;}
+.cart-close-btn:hover { color: var(--green) !important; }
+
+.cart-items { flex: 1 1 auto; min-height: 0; max-height: 45vh; overflow-y: auto; padding-right: 5px; display: flex; flex-direction: column; gap: 15px; }
+.cart-item { display: grid; grid-template-columns: 1fr; gap: 10px; align-items: center; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+.cart-item-info { display: flex; flex-direction: column; gap: 4px; }
+.cart-item-title { font-size: 13px; font-weight: 800; color: var(--green) !important; line-height: 1.4;}
+.cart-item-meta { font-size: 11px; color: var(--muted) !important; }
+
+.cart-item-controls { display: flex; align-items: center; gap: 10px; }
+.cart-qty-box { display: flex; align-items: center; border: 1px solid #ddd !important; border-radius: 4px !important; background: #fff !important; overflow: hidden;}
+.cart-qty-box button { width: 28px !important; height: 28px !important; background: #f5f5f5 !important; border: none !important; color: var(--green) !important; font-size: 14px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; justify-content: center;}
+.cart-qty-box button:hover { background: #e0e0e0 !important; }
+.cart-qty-box span { min-width: 28px; text-align: center; font-size: 11px !important; font-weight: 800 !important; color: var(--text) !important;}
+
+.cart-remove-btn { background: none !important; border: none !important; color: #dc3545 !important; font-size: 22px !important; cursor: pointer; padding: 5px !important; line-height: 1; display: flex; align-items: center;}
+.cart-remove-btn:hover { color: #a71d2a !important; }
+
+.cart-total { font-weight: 800; color: var(--green) !important; margin: 20px 0 15px; font-size: 16px;}
+.cart-wa { 
+  display: flex !important; align-items: center; justify-content: center; gap: 8px; width: 100%;
+  background-color: #128C7E !important; color: #fff !important; min-height: 48px; border-radius: 6px !important; 
+  font-size: 11px !important; font-weight: 800 !important; text-transform: uppercase !important; text-decoration: none !important;
+}
+.cart-wa:hover { background-color: #0e7064 !important; }
+
+/* ==========================================================================
+   FLOATING BUTTONS & LIGHTBOX
+   ========================================================================== */
+.lightbox {
+  position: fixed; z-index: 999999 !important; inset: 0; background: rgba(0,0,0,0.9); display: none; 
+  align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(5px);
+}
+.lightbox.active { display: flex; }
+.lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; }
+.lightbox-content img { max-width: 100%; max-height: 90vh; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+.lightbox-close { 
+  position: absolute; top: -50px; right: -10px; color: #fff !important; font-size: 40px !important; cursor: pointer; 
+  background: none !important; border: none !important; padding: 5px !important; line-height: 1; z-index: 2;
+}
+
+/* ADDED: iOS SAFE-AREA FIX */
+.float-wa { 
+  position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom)); width: 56px; height: 56px; border-radius: 50%; 
+  background: #fff; display: flex; align-items: center; justify-content: center; 
+  box-shadow: 0 8px 25px rgba(18,140,126,.3); z-index: 999990 !important; border: 1px solid #eee; transition: transform 0.3s;
+}
+.float-wa:hover { transform: translateY(-4px); }
+
+/* ADDED: iOS SAFE-AREA FIX */
+.float-cart { 
+  position: fixed; right: 24px; bottom: calc(94px + env(safe-area-inset-bottom)); width: 56px; height: 56px; border-radius: 50%; 
+  background: var(--green) !important; display: flex; align-items: center; justify-content: center; 
+  box-shadow: 0 8px 25px rgba(6,75,60,.3) !important; z-index: 999990 !important; border: none !important; cursor: pointer; transition: transform 0.3s;
+}
+.float-cart:hover { transform: translateY(-4px); }
+.cart-badge {
+  position: absolute; top: -4px; right: -4px; background: #e0bf67 !important; color: var(--deep) !important;
+  font-size: 12px !important; font-weight: 800 !important; width: 24px; height: 24px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@keyframes cartBump {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+.cart-badge.bump { animation: cartBump 0.3s ease; }
+
+/* ==========================================================================
+   RESPONSIVE QUERIES
+   ========================================================================== */
+@media(max-width:950px){
+  .raw-grid { grid-template-columns: 1fr 1fr !important; }
+  .testi-grid { grid-template-columns: 1fr 1fr !important; }
+  .raw-card:nth-child(2) { border-right: 0; }
+  .raw-card:nth-child(3), .raw-card:nth-child(4) { border-top: 1px solid var(--line); }
+  .catalog-grid { grid-template-columns: 1fr; }
+}
+
+@media(max-width:760px){
+  .container { width: min(100% - 30px, 600px); }
+  
+  /* Mobile Hero Adjustments */
+  .hero { 
+    aspect-ratio: auto; 
+    min-height: 95vh; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center;
+    background: #efe8d8; 
+    padding: 35px 0 30px 0; 
+  }
+  
+  .hero-art-link { 
+    position: absolute; 
+    inset: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1; 
+    display: block; 
+  }
+  
+  .hero-art { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center bottom; 
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+  }
+  
+  .hero-overlay {
+    display: block !important;
+    position: absolute; 
+    inset: 0; 
+    z-index: 2; 
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(247,243,233,0.95) 0%, rgba(247,243,233,0.85) 25%, rgba(247,243,233,0) 50%);
+  }
+  
+  .hero-copy { 
+    position: relative; 
+    z-index: 3; 
+    width: min(100% - 32px, 480px); 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+
+  .hero-text-wrap { 
+    max-width: 100%; 
+  }
+  
+  .hero-copy h1 { 
+    font-size: clamp(30px, 7vw, 40px); 
+    margin: 6px 0 14px; 
+  }
+
+  .hero-copy p { 
+    font-size: 14.5px; 
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+  }
+
+  .hero-copy .divider { margin: 10px auto; }
+
+  .hero-actions { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 8px; 
+    margin-bottom: 0; 
+    width: 100%;
+  }
+
+  .hero-actions .btn { 
+    width: auto !important; 
+    min-width: 180px;
+    min-height: 36px !important;
+    height: 36px !important;
+    padding: 0 16px !important;
+    font-size: 10.5px !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  .hero-points { display: none; }
+  
+  .promise-grid.three { grid-template-columns: 1fr; }
+  .promise-item { border-right: 0; border-bottom: 1px solid var(--line); }
+  .promise-item:last-child { border-bottom: 0; }
+  
+  .product, .product.reverse { grid-template-columns: 1fr; padding: 40px 0; gap: 20px; }
+  .product-media, .product.reverse .product-media { order: 1; padding: 0; }
+  .product-content, .product.reverse .product-content { order: 2; grid-template-columns: 1fr; gap: 30px; }
+  .product-info { border-left: 0; border-top: 1px solid var(--gold); padding-left: 0; padding-top: 20px; }
+  
+  .price-grid { grid-template-columns: repeat(2, 1fr); }
+  
+  .raw-grid { grid-template-columns: 1fr !important; }
+  .testi-grid { grid-template-columns: 1fr !important; }
+  .story-simple { grid-template-columns: 1fr !important; }
+  .story-facts { grid-template-columns: 1fr !important; }
+  .story-facts div { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+
+@media(max-width:430px){
+  .hero-actions { flex-direction: column; align-items: center; width: 100%;}
+  .hero-actions .btn { width: auto !important; min-width: 170px; min-height: 36px !important; height: 36px !important; font-size: 10.5px !important; }
+  .price-grid { grid-template-columns: repeat(2, 1fr); }
+  .order-row { flex-direction: column; align-items: stretch; gap: 12px; }
+  .wa-order, .add-cart { width: 100%; }
+}
+
+
+/* ===== JIA NATURALS FOOTER STYLES ===== */
+/* =========================================================
+   RESET / BASE
+========================================================= */
+
+.jia-footer-main,
+.jia-footer-main * {
+    box-sizing: border-box;
+}
+
+.jia-footer-main {
+    width: 100%;
+    background: #04382d;
+    color: #f7f3e9;
+    border-top: 2px solid #c59a35;
+    padding: 48px 0 22px;
+    font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+}
+
+.jia-footer-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.jia-footer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(150px, 0.85fr) minmax(250px, 1.15fr);
+    column-gap: 55px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(247, 243, 233, 0.10);
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.jia-footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+
+.jia-footer-logo {
+    width: auto;
+    max-width: 190px;
+    max-height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
+.jia-footer-text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jia-footer-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    white-space: nowrap;
+}
+
+.jia-footer-sub {
+    color: #c59a35;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   BRAND DESCRIPTION
+========================================================= */
+
+.jia-footer-tagline {
+    color: #c59a35;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.jia-footer-desc {
+    color: rgba(247, 243, 233, 0.70);
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 370px;
+    margin: 0;
+}
+
+/* =========================================================
+   COLUMN HEADINGS
+========================================================= */
+
+.jia-footer-col h4 {
+    color: #c59a35;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.jia-footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jia-footer-col li {
+    margin: 0 0 11px;
+}
+
+.jia-footer-col a {
+    color: rgba(247, 243, 233, 0.76);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.jia-footer-col a:hover {
+    color: #c59a35;
+}
+
+/* =========================================================
+   CONTACT ROWS
+========================================================= */
+
+.jia-icon-row {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 11px;
+    width: fit-content;
+    color: rgba(247, 243, 233, 0.76) !important;
+}
+
+.jia-icon-row:hover {
+    color: #c59a35 !important;
+    transform: translateX(2px);
+}
+
+.jia-svg-icon {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 19px;
+    margin-top: 1px;
+    stroke: currentColor;
+    opacity: 0.82;
+}
+
+/* =========================================================
+   STORE LOCATION CARD
+========================================================= */
+
+.jia-store-locator-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    width: 100%;
+    padding: 11px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(197,154,53,0.30);
+    border-radius: 9px;
+    text-decoration: none !important;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jia-store-locator-card:hover {
+    background: rgba(197,154,53,0.075);
+    border-color: rgba(197,154,53,0.70);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.13);
+}
+
+/* =========================================================
+   LOCATION ICON
+========================================================= */
+
+.jia-map-square-box {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #c59a35;
+    background: #073b30;
+    color: #c59a35;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.jia-store-locator-card:hover .jia-map-square-box {
+    background: #c59a35;
+    color: #04382d;
+}
+
+.jia-map-square-box svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+/* =========================================================
+   LOCATION TEXT
+========================================================= */
+
+.jia-store-text-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.jia-store-heading {
+    color: #c59a35;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.jia-store-address {
+    color: rgba(247,243,233,0.82);
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.jia-store-directions {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    transition: color 0.25s ease;
+}
+
+.jia-store-locator-card:hover .jia-store-directions {
+    color: #c59a35;
+}
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.jia-ig-text {
+    color: #c59a35 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.jia-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    color: rgba(247,243,233,0.42);
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+    .jia-footer-main {
+        padding: 42px 0 20px;
+    }
+    .jia-footer-container {
+        width: calc(100% - 40px);
+    }
+    .jia-footer-grid {
+        grid-template-columns: 1.4fr 0.9fr 1.1fr;
+        column-gap: 30px;
+    }
+}
+
+/* =========================================================
+   MOBILE — MAIN DESIGN
+========================================================= */
+
+@media (max-width: 600px) {
+    .jia-footer-main {
+        padding: 32px 0 17px !important;
+    }
+    .jia-footer-container {
+        width: calc(100% - 28px);
+        max-width: 500px;
+    }
+    .jia-footer-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        column-gap: 18px;
+        row-gap: 0;
+        padding-bottom: 20px;
+    }
+    .jia-footer-grid > div:first-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        padding-bottom: 22px;
+        margin-bottom: 21px;
+        border-bottom: 1px solid rgba(247,243,233,0.08);
+    }
+    .jia-footer-brand {
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+    .jia-footer-logo {
+        max-width: 155px;
+        max-height: 45px;
+    }
+    .jia-footer-title {
+        font-size: 16px;
+        letter-spacing: 0.075em;
+    }
+    .jia-footer-sub {
+        font-size: 5px;
+        letter-spacing: 0.27em;
+        margin-top: 5px;
+    }
+    .jia-footer-tagline {
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.09em;
+        margin-bottom: 8px;
+    }
+    .jia-footer-desc {
+        font-size: 12px;
+        line-height: 1.55;
+        max-width: 100%;
+    }
+    .jia-footer-grid > div:nth-child(2),
+    .jia-footer-grid > div:nth-child(3) {
+        padding: 0;
+        margin: 0;
+        border: none;
+        min-width: 0;
+    }
+    .jia-footer-col h4 {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        margin-bottom: 14px;
+    }
+    .jia-footer-col li {
+        margin-bottom: 9px;
+    }
+    .jia-footer-col a {
+        font-size: 11.5px;
+        line-height: 1.4;
+    }
+    .jia-icon-row {
+        gap: 7px;
+    }
+    .jia-svg-icon {
+        width: 16px;
+        height: 16px;
+        flex-basis: 16px;
+    }
+    .jia-icon-row span {
+        font-size: 11px;
+    }
+    .jia-footer-grid > div:nth-child(3) li:has(.jia-store-locator-card) {
+        margin-top: 10px;
+    }
+    .jia-store-locator-card {
+        padding: 10px;
+        gap: 8px;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .jia-map-square-box {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        border-radius: 5px;
+    }
+    .jia-map-square-box svg {
+        width: 17px;
+        height: 17px;
+    }
+    .jia-store-heading {
+        font-size: 8.5px;
+        letter-spacing: 0.07em;
+        margin-bottom: 3px;
+    }
+    .jia-store-address {
+        font-size: 10px;
+        line-height: 1.45;
+    }
+    .jia-store-directions {
+        font-size: 8.5px;
+        letter-spacing: 0.045em;
+        margin-top: 5px;
+    }
+    .jia-footer-grid > div:nth-child(3) li:has(.jia-ig-text) {
+        margin-top: 10px !important;
+        margin-bottom: 0;
+    }
+    .jia-ig-text {
+        font-size: 10px !important;
+    }
+    .jia-footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+        padding-top: 16px;
+        font-size: 7.5px;
+        line-height: 1.5;
+        letter-spacing: 0.045em;
+    }
+}
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+    .jia-footer-main {
+        padding: 28px 0 15px !important;
+    }
+    .jia-footer-container {
+        width: calc(100% - 22px);
+    }
+    .jia-footer-grid {
+        grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+        column-gap: 14px;
+    }
+    .jia-footer-grid > div:first-child {
+        padding-bottom: 19px;
+        margin-bottom: 18px;
+    }
+    .jia-footer-brand {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    .jia-footer-logo {
+        max-width: 140px;
+        max-height: 41px;
+    }
+    .jia-footer-title {
+        font-size: 14px;
+    }
+    .jia-footer-sub {
+        font-size: 4.5px;
+    }
+    .jia-footer-tagline {
+        font-size: 9px;
+    }
+    .jia-footer-desc {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .jia-footer-col h4 {
+        font-size: 9px;
+        margin-bottom: 12px;
+    }
+    .jia-footer-col a {
+        font-size: 10.5px;
+    }
+    .jia-icon-row span {
+        font-size: 10px;
+    }
+    .jia-store-locator-card {
+        padding: 8px;
+        gap: 7px;
+    }
+    .jia-map-square-box {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+    }
+    .jia-store-heading {
+        font-size: 7.5px;
+    }
+    .jia-store-address {
+        font-size: 9px;
+    }
+    .jia-store-directions {
+        font-size: 8px;
+    }
+    .jia-ig-text {
+        font-size: 9px !important;
+    }
+    .jia-footer-bottom {
+        font-size: 7px;
+    }
+}
+</style>
+</head>
+<body>
+<main>
+  <!-- HERO BANNER -->
+  <section class="hero" id="home">
+    <a href="#oils" class="hero-art-link" aria-label="View Our Oils">
+      <picture style="width: 100%; height: 100%; display: block; position: absolute; inset: 0;">
+        <source media="(max-width: 760px)" srcset="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-01_21_28-PM.webp" width="800" height="1000">
+        <img class="hero-art" src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-05_09_10-PM-3.webp" alt="JIA Naturals full range of traditionally pressed oils" width="1600" height="900" loading="eager" fetchpriority="high">
+      </picture>
+    </a>
+    <div class="hero-overlay"></div>
+    <div class="hero-copy">
+      <div class="hero-text-wrap">
+        <span class="eyebrow">Traditional Indian Craftsmanship</span>
+        <h1>Traditionally pressed,<br><em>naturally pure.</em></h1>
+        <div class="divider"></div>
+        <p>Cold-pressed oils crafted the traditional way for a healthier you and a better tomorrow. Slow extracted with care and presented in JIA Naturals' signature glass bottles.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#oils">Explore Our Oils &rarr;</a>
+          <!-- UPDATED LINK: Now anchors directly to the new teaser section -->
+          <a class="btn light" href="#process-teaser">Our Process &rarr;</a>
+        </div>
+        <div class="hero-points">
+          <div class="hero-point"><strong>Traditional</strong><span>Ghani extracted</span></div>
+          <div class="hero-point"><strong>Natural</strong><span>No chemical refining</span></div>
+          <div class="hero-point"><strong>Pure</strong><span>Carefully filtered</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="promise" id="ghani-promise">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:20px">
+        <span class="eyebrow">The Ghani Promise</span>
+        <h2 style="font-size:28px;margin-top:5px">Traditional Extraction, Carefully Preserved</h2>
+        <div class="divider"></div>
+        <p style="margin:0">Our processing framework is built around mechanical extraction, natural clarification and no chemical refining.</p>
+      </div>
+      <div class="promise-grid three">
+        <div class="promise-item">
+          <!-- REPLACED: Circle/Drop SVG -->
+          <div class="promise-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <strong>Zero Heat Induction</strong><span>Wood and stone components absorb frictional heat to keep extraction temperatures low.</span>
+        </div>
+        <div class="promise-item">
+          <!-- REPLACED: Leaf SVG -->
+          <div class="promise-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 22l7.5-7.5"/><path d="M11 20v-5"/></svg>
+          </div>
+          <strong>Zero Chemical Refining</strong><span>No hexane, bleaching clays or artificial preservatives are used in the refining process.</span>
+        </div>
+        <div class="promise-item">
+          <!-- REPLACED: Funnel SVG -->
+          <div class="promise-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <strong>Natural Clarification</strong><span>Natural gravitational sedimentation followed by cold micro-fabric filtration.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OILS SECTION -->
+  <section class="section oils" id="oils">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Traditionally Pressed</span>
+        <h2>Our Pure Oils</h2>
+        <div class="divider"></div>
+        <p>Choose your oil, select the size and quantity, then order directly on WhatsApp.</p>
+        <div class="compliance-note">FSSAI Lic. No. 20126053001918 &nbsp;|&nbsp; Free delivery <img src="https://jianaturals.com/wp-content/uploads/2026/09/Courier_bike_logo_icon_design___Premium_AI-generated_vector-removebg-preview.png" width="22" height="22" alt="Delivery bike logo icon" style="display:inline-block; width:22px; height:22px; object-fit:contain; vertical-align:middle; margin:0 2px;"> on minimum order of ₹1,000 (up to 7 km)</div>
+      </div>
+
+      <div class="product-list">
+        <!-- 01 GROUNDNUT OIL -->
+        <article class="product" data-name="Groundnut Oil" data-prices='{"250 ML":120,"500 ML":220,"1 L":400,"5 L":1900}' data-selected="250 ML" data-qty="1">
+          <div class="product-media">
+            <div class="product-image-wrap" role="button" tabindex="0" aria-label="View lab report for Groundnut Oil" onclick="window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/groundnut-oil-lab-certificate.jpg')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/groundnut-oil-lab-certificate.jpg')}">
+              <img loading="lazy" class="product-image" src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-05_10_41-PM.webp" width="630" height="787" alt="JIA Naturals Groundnut Oil bottle">
+              <img loading="lazy" class="cert-image-inline" src="https://jianaturals.com/wp-content/uploads/2026/09/groundnut-oil-lab-certificate.jpg" width="630" height="815" alt="Groundnut Oil Lab Report">
+              <div class="lab-hint"></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-main">
+              <div class="product-number">01 / Groundnut Oil</div>
+              <h3 class="product-title">Groundnut Oil</h3>
+              <p class="product-desc">Traditionally pressed, naturally pure. Rich in healthy fats and suited to everyday Indian cooking.</p>
+              <div class="price-label">Select size &amp; price</div>
+              <div class="price-grid">
+                <button type="button" class="price-option active" aria-pressed="true" onclick="window.jiaApp.selectVariant(this,'250 ML')"><span class="price-size">250 ML</span><span class="price-amount">&#8377;120</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'500 ML')"><span class="price-size">500 ML</span><span class="price-amount">&#8377;220</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'1 L')"><span class="price-size">1 L</span><span class="price-amount">&#8377;400</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'5 L')"><span class="price-size">5 L</span><span class="price-amount">&#8377;1,900</span></button>
+              </div>
+              <div class="selected">Selected total: <strong class="selected-price">&#8377;120</strong></div>
+              
+              <div class="order-row">
+                <div class="qty-wrapper">
+                  <div class="qty">
+                    <button type="button" onclick="window.jiaApp.changeQty(this,-1)" aria-label="Decrease quantity">&minus;</button>
+                    <span class="qty-value" aria-live="polite">1</span>
+                    <button type="button" onclick="window.jiaApp.changeQty(this,1)" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+                <button type="button" class="add-cart" onclick="window.jiaApp.addToCart(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—black-shopping-cart-icon-for_24036098.png" width="24" height="24" class="btn-icon icon-white" alt="Shopping Cart icon">
+                  Add to Cart
+                </button>
+                <button type="button" class="wa-order" onclick="window.jiaApp.orderWhatsApp(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+                  Order on WhatsApp
+                </button>
+              </div>
+              
+            </div>
+            <div class="product-info">
+              <div class="info-guide">
+                <h4>Product Information</h4>
+                <div class="info-item"><strong>Ingredients</strong><p>100% Pure Cold Pressed Groundnut Oil.</p></div>
+                <div class="info-item"><strong>Benefits</strong><p>Heart-healthy, helps control cholesterol, and packed with antioxidants.</p></div>
+                <div class="info-item"><strong>Best For</strong><p>Deep frying, daily cooking, and traditional Indian tempering (tadka).</p></div>
+                <div class="info-item"><strong>Storage</strong><p>Keep in a cool, dry place away from sunlight. Close cap tightly.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 SESAME OIL -->
+        <article class="product reverse" data-name="White Sesame Oil" data-prices='{"250 ML":155,"500 ML":285,"1 L":530,"5 L":2550}' data-selected="250 ML" data-qty="1">
+          <div class="product-media">
+            <div class="product-image-wrap" role="button" tabindex="0" aria-label="View lab report for White Sesame Oil" onclick="window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/sesame-oil-lab-certificate.jpg')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/sesame-oil-lab-certificate.jpg')}">
+              <img loading="lazy" class="product-image" src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-05_12_35-PM.webp" width="630" height="787" alt="JIA Naturals White Sesame Oil bottle">
+              <img loading="lazy" class="cert-image-inline" src="https://jianaturals.com/wp-content/uploads/2026/09/sesame-oil-lab-certificate.jpg" width="630" height="815" alt="Sesame Oil Lab Report">
+              <div class="lab-hint"></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-main">
+              <div class="product-number">02 / White Sesame Oil</div>
+              <h3 class="product-title">White Sesame Oil</h3>
+              <p class="product-desc">A traditional favourite, extracted with care to retain its natural flavour and nutrition. Pure warm gingelly goodness.</p>
+              <div class="price-label">Select size &amp; price</div>
+              <div class="price-grid">
+                <button type="button" class="price-option active" aria-pressed="true" onclick="window.jiaApp.selectVariant(this,'250 ML')"><span class="price-size">250 ML</span><span class="price-amount">&#8377;155</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'500 ML')"><span class="price-size">500 ML</span><span class="price-amount">&#8377;285</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'1 L')"><span class="price-size">1 L</span><span class="price-amount">&#8377;530</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'5 L')"><span class="price-size">5 L</span><span class="price-amount">&#8377;2,550</span></button>
+              </div>
+              <div class="selected">Selected total: <strong class="selected-price">&#8377;155</strong></div>
+              
+              <div class="order-row">
+                <div class="qty-wrapper">
+                  <div class="qty">
+                    <button type="button" onclick="window.jiaApp.changeQty(this,-1)" aria-label="Decrease quantity">&minus;</button>
+                    <span class="qty-value" aria-live="polite">1</span>
+                    <button type="button" onclick="window.jiaApp.changeQty(this,1)" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+                <button type="button" class="add-cart" onclick="window.jiaApp.addToCart(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—black-shopping-cart-icon-for_24036098.png" width="24" height="24" class="btn-icon icon-white" alt="Shopping Cart icon">
+                  Add to Cart
+                </button>
+                <button type="button" class="wa-order" onclick="window.jiaApp.orderWhatsApp(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+                  Order on WhatsApp
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="info-guide">
+                <h4>Product Information</h4>
+                <div class="info-item"><strong>Ingredients</strong><p>100% Pure Cold Pressed Sesame Oil.</p></div>
+                <div class="info-item"><strong>Benefits</strong><p>Good for the heart, strengthens bones, and promotes healthy skin.</p></div>
+                <div class="info-item"><strong>Best For</strong><p>South Indian dishes, dressings, low-heat cooking, and body massages.</p></div>
+                <div class="info-item"><strong>Storage</strong><p>Keep in a cool, dry place away from sunlight. Close cap tightly.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 SUNFLOWER OIL -->
+        <article class="product" data-name="Sunflower Oil" data-prices='{"250 ML":145,"500 ML":265,"1 L":490,"5 L":2350}' data-selected="250 ML" data-qty="1">
+          <div class="product-media">
+            <div class="product-image-wrap" role="button" tabindex="0" aria-label="View lab report for Sunflower Oil" onclick="window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/sunflower-oil-lab-certificate.jpg')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/sunflower-oil-lab-certificate.jpg')}">
+              <img loading="lazy" class="product-image" src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-05_22_17-PM.webp" width="630" height="787" alt="JIA Naturals Sunflower Oil bottle">
+              <img loading="lazy" class="cert-image-inline" src="https://jianaturals.com/wp-content/uploads/2026/09/sunflower-oil-lab-certificate.jpg" width="630" height="815" alt="Sunflower Oil Lab Report">
+              <div class="lab-hint"></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-main">
+              <div class="product-number">03 / Sunflower Oil</div>
+              <h3 class="product-title">Sunflower Oil</h3>
+              <p class="product-desc">Naturally pressed to bring you a light, healthy and versatile cooking companion for everyday vitality.</p>
+              <div class="price-label">Select size &amp; price</div>
+              <div class="price-grid">
+                <button type="button" class="price-option active" aria-pressed="true" onclick="window.jiaApp.selectVariant(this,'250 ML')"><span class="price-size">250 ML</span><span class="price-amount">&#8377;145</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'500 ML')"><span class="price-size">500 ML</span><span class="price-amount">&#8377;265</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'1 L')"><span class="price-size">1 L</span><span class="price-amount">&#8377;490</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'5 L')"><span class="price-size">5 L</span><span class="price-amount">&#8377;2,350</span></button>
+              </div>
+              <div class="selected">Selected total: <strong class="selected-price">&#8377;145</strong></div>
+              
+              <div class="order-row">
+                <div class="qty-wrapper">
+                  <div class="qty">
+                    <button type="button" onclick="window.jiaApp.changeQty(this,-1)" aria-label="Decrease quantity">&minus;</button>
+                    <span class="qty-value" aria-live="polite">1</span>
+                    <button type="button" onclick="window.jiaApp.changeQty(this,1)" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+                <button type="button" class="add-cart" onclick="window.jiaApp.addToCart(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—black-shopping-cart-icon-for_24036098.png" width="24" height="24" class="btn-icon icon-white" alt="Shopping Cart icon">
+                  Add to Cart
+                </button>
+                <button type="button" class="wa-order" onclick="window.jiaApp.orderWhatsApp(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+                  Order on WhatsApp
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="info-guide">
+                <h4>Product Information</h4>
+                <div class="info-item"><strong>Ingredients</strong><p>100% Pure Cold Pressed Sunflower Oil.</p></div>
+                <div class="info-item"><strong>Benefits</strong><p>Light, easy to digest, rich in Vitamin E, and good for your heart.</p></div>
+                <div class="info-item"><strong>Best For</strong><p>Everyday cooking, frying, and sautéing.</p></div>
+                <div class="info-item"><strong>Storage</strong><p>Keep in a cool, dry place away from sunlight. Close cap tightly.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 COCONUT OIL -->
+        <article class="product reverse" data-name="Coconut Oil" data-prices='{"250 ML":210,"500 ML":400,"1 L":760,"5 L":3760}' data-selected="250 ML" data-qty="1">
+          <div class="product-media">
+            <div class="product-image-wrap" role="button" tabindex="0" aria-label="View lab report for Coconut Oil" onclick="window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/coconut-oil-lab-certificate.jpg')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.jiaApp.openLightbox('https://jianaturals.com/wp-content/uploads/2026/09/coconut-oil-lab-certificate.jpg')}">
+              <img loading="lazy" class="product-image" src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-05_00_00-PM.webp" width="630" height="787" alt="JIA Naturals Coconut Oil bottle">
+              <img loading="lazy" class="cert-image-inline" src="https://jianaturals.com/wp-content/uploads/2026/09/coconut-oil-lab-certificate.jpg" width="630" height="815" alt="Coconut Oil Lab Report">
+              <div class="lab-hint"></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-main">
+              <div class="product-number">04 / Coconut Oil</div>
+              <h3 class="product-title">Coconut Oil</h3>
+              <p class="product-desc">Traditionally pressed, naturally pure. Nourishing for cooking, hair and skin, with the goodness of coconut.</p>
+              <div class="price-label">Select size &amp; price</div>
+              <div class="price-grid">
+                <button type="button" class="price-option active" aria-pressed="true" onclick="window.jiaApp.selectVariant(this,'250 ML')"><span class="price-size">250 ML</span><span class="price-amount">&#8377;210</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'500 ML')"><span class="price-size">500 ML</span><span class="price-amount">&#8377;400</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'1 L')"><span class="price-size">1 L</span><span class="price-amount">&#8377;760</span></button>
+                <button type="button" class="price-option" aria-pressed="false" onclick="window.jiaApp.selectVariant(this,'5 L')"><span class="price-size">5 L</span><span class="price-amount">&#8377;3,760</span></button>
+              </div>
+              <div class="selected">Selected total: <strong class="selected-price">&#8377;210</strong></div>
+              
+              <div class="order-row">
+                <div class="qty-wrapper">
+                  <div class="qty">
+                    <button type="button" onclick="window.jiaApp.changeQty(this,-1)" aria-label="Decrease quantity">&minus;</button>
+                    <span class="qty-value" aria-live="polite">1</span>
+                    <button type="button" onclick="window.jiaApp.changeQty(this,1)" aria-label="Increase quantity">+</button>
+                  </div>
+                </div>
+                <button type="button" class="add-cart" onclick="window.jiaApp.addToCart(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—black-shopping-cart-icon-for_24036098.png" width="24" height="24" class="btn-icon icon-white" alt="Shopping Cart icon">
+                  Add to Cart
+                </button>
+                <button type="button" class="wa-order" onclick="window.jiaApp.orderWhatsApp(this)">
+                  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+                  Order on WhatsApp
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="info-guide">
+                <h4>Product Information</h4>
+                <div class="info-item"><strong>Ingredients</strong><p>100% Pure Cold Pressed Coconut Oil.</p></div>
+                <div class="info-item"><strong>Benefits</strong><p>Boosts energy, builds immunity, and deeply nourishes skin and hair.</p></div>
+                <div class="info-item"><strong>Best For</strong><p>Baking, vegan cooking, oil pulling, and daily hair/skin care.</p></div>
+                <div class="info-item"><strong>Storage</strong><p>Keep in a cool, dry place away from sunlight. Close cap tightly. Naturally solidifies below 24&deg;C.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP SECTION -->
+  <section class="section craftsmanship" id="craftsmanship">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Interactive Craftsmanship Detail</span>
+        <h2>From Seed to Oil</h2>
+        <div class="divider"></div>
+        <p>Our raw materials are handled with defined moisture criteria before traditional mechanical extraction.</p>
+      </div>
+      <div class="raw-grid">
+        <div class="raw-card"><strong>Kuridi Copra</strong><span>Sun-dried Kuridi Copra</span><small>Optimal moisture: 6&mdash;8%</small></div>
+        <div class="raw-card"><strong>Sunflower</strong><span><em>Helianthus annuus</em></span><small>Optimal moisture: 7&mdash;9%</small></div>
+        <div class="raw-card"><strong>Groundnut</strong><span><em>Arachis hypogaea</em></span><small>Optimal moisture: 8&mdash;11%</small></div>
+        <div class="raw-card"><strong>White Sesame</strong><span><em>Sesamum indicum</em> &middot; High Purity Dry Grade</span><small>Optimal moisture: 6.3&mdash;6.5%</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADDED: PROCESS TEASER SECTION -->
+  <section class="teaser-section" id="process-teaser">
+    <div class="teaser-bg" aria-hidden="true"></div>
+    <div class="teaser-content">
+      <span class="teaser-eyebrow">The Art of Extraction</span>
+      <h2>Patience, pressure, and purity.</h2>
+      <p>Discover the traditional mechanical craftsmanship that preserves the soul of every seed.</p>
+      <a href="/our-process/" class="btn light">Discover the Craft &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOD CATALOG -->
+  <section class="food-section" id="food-products">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Traditional Food Heritage</span>
+        <h2>Traditional Snacks &amp; More</h2>
+        <div class="divider"></div>
+        <p>Alongside our cold-pressed oils, JIA Naturals offers a catalog of traditional snacks, handmade spice powders and authentic pickles.</p>
+        <div class="compliance-note">FSSAI Lic. No. 20126053001918 &nbsp;|&nbsp; Free delivery <img src="https://jianaturals.com/wp-content/uploads/2026/09/Courier_bike_logo_icon_design___Premium_AI-generated_vector-removebg-preview.png" width="22" height="22" alt="Delivery bike icon" style="display:inline-block; width:22px; height:22px; object-fit:contain; vertical-align:middle; margin:0 2px;"> on minimum order of ₹1,000 (up to 7 km)</div>
+      </div>
+
+      <div class="catalog-grid">
+        <div class="catalog-card">
+          <div class="catalog-kicker">01</div>
+          <h3>Snacks &amp; Savories</h3>
+          <p>Traditional snack varieties and savories.</p>
+          <ul>
+            <li class="food-item" data-name="Jia Naturals Chegodi" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Chegodi</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Jantika" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Jantika</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Minapasunni" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Minapasunni</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Hot Appadam" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Hot Appadam</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Gummadi Vadiyalu" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Gummadi Vadiyalu</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog-card">
+          <div class="catalog-kicker">02</div>
+          <h3>Spice Powders</h3>
+          <p>Authentic handmade podis for the traditional kitchen.</p>
+          <ul>
+            <li class="food-item" data-name="Jia Naturals Idly Karam Podi" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Idly Karam Podi</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Kandi Podi" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Kandi Podi</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Telagapindi Podi" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Telagapindi Podi</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Curry Leaf Podi" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Curry Leaf Podi</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Sambar Powder" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Sambar Powder</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Rasam Powder" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Rasam Powder</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog-card">
+          <div class="catalog-kicker">03</div>
+          <h3>Authentic Pickles</h3>
+          <p>Traditional pickle varieties.</p>
+          <ul>
+            <li class="food-item" data-name="Jia Naturals H.M. Avakaya Pickle" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals H.M. Avakaya Pickle</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Endu Avakaya Pickle" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Endu Avakaya Pickle</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Hot Magaee Pickle" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Hot Magaee Pickle</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Fruit Chilly Pickle" data-size="250 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Fruit Chilly Pickle</span><span class="food-weight">250 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Tomato Pickle" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Tomato Pickle</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Gongura Pickle" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Gongura Pickle</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+            <li class="food-item" data-name="Jia Naturals Lemon Pickle" data-size="200 gm" data-price="120">
+              <div class="food-details"><span class="food-name">Jia Naturals Lemon Pickle</span><span class="food-weight">200 gm</span><span class="food-price">&#8377;120</span></div>
+              <button type="button" class="food-add-cart" onclick="window.jiaApp.addFoodToCart(this)">+ ADD</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 45px;">
+        <a class="btn" href="https://wa.me/918639199011?text=Hello%20JIA%20NATURALS%2C%20I%20would%20like%20to%20order%20some%20traditional%20snacks%20and%20food%20products." target="_blank" rel="noopener noreferrer" style="font-size: 13px; padding: 15px 30px; border-radius: 30px;">
+          <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+          Order Food Products on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="section story-details" id="story-details">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Journey</span>
+        <h2>Our Story</h2>
+        <div class="divider"></div>
+        <p>JIA NATURALS is a cold-pressed edible oil manufacturing enterprise focused on traditional mechanical extraction and natural processing.</p>
+      </div>
+      <div class="story-simple">
+        <div>
+          <h3>The Ghani way, with careful processing.</h3>
+          <p>Our framework centers on Zero Heat Induction, Zero Chemical Refining and Natural Clarification. The oil is naturally settled through gravitational sedimentation and then passed through cold micro-fabric filtration.</p>
+          <p>Our extraction setup uses <strong>2 &times; VOC 20 KG Automatic Oil Extraction Ghani Machines</strong> powered by IE-4 motors, manufactured by Zen Tech Engineering, Coimbatore.</p>
+        </div>
+        <div class="story-facts">
+          <div><strong>2 &times;</strong><span>VOC 20 KG Ghani Machines</span></div>
+          <div><strong>IE-4</strong><span>Motor specification</span></div>
+          <div><strong>84799090</strong><span>HSN for machinery</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADDED: TESTIMONIALS SECTION -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Customer Voices</span>
+        <h2>What Our Customers Say</h2>
+        <div class="divider"></div>
+        <p>Real feedback from our loyal customers across Visakhapatnam.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <p class="testi-text">"The purity of the groundnut oil reminds me of my childhood. No artificial smell, just rich authentic flavor. Highly recommended for daily cooking."</p>
+          <span class="testi-author">Praveen K.</span>
+          <span class="testi-loc">MVP Colony, Visakhapatnam</span>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <p class="testi-text">"I’ve switched entirely to JIA Naturals for my family's cooking needs. The quality is consistent, and the glass bottle packaging keeps it fresh."</p>
+          <span class="testi-author">Swathi Reddy</span>
+          <span class="testi-loc">Madhurawada, Visakhapatnam</span>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <p class="testi-text">"Excellent sesame oil! The aroma is fantastic, and it makes my traditional dishes taste so much better. Fast delivery and great customer service."</p>
+          <span class="testi-author">Ramesh Babu</span>
+          <span class="testi-loc">Seethammadhara, Visakhapatnam</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FLOATING ACTIONS -->
+<a class="float-wa" href="https://wa.me/918639199011?text=Hello%20JIA%20NATURALS%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Chat with JIA Naturals on WhatsApp">
+  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="32" height="32" alt="WhatsApp icon" aria-hidden="true">
+</a>
+
+<button class="float-cart" type="button" onclick="window.jiaApp.openCart()" aria-label="Open shopping cart" aria-controls="cartDrawer" aria-expanded="false">
+  <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—black-shopping-cart-icon-for_24036098.png" width="24" height="24" class="icon-white" alt="Shopping Cart icon" aria-hidden="true">
+  <span class="cart-badge" id="cartBadge" aria-live="polite">0</span>
+</button>
+
+<!-- COMPACT FLOATING CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay" tabindex="-1"></div>
+<div class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="cart-header">
+    <h3 id="cartTitle">Your Cart</h3>
+    <button type="button" class="cart-close-btn" onclick="window.jiaApp.closeCart()" aria-label="Close cart">&times;</button>
+  </div>
+  <div style="display: flex; align-items: center; gap: 8px; background: rgba(6,75,60,0.05); padding: 8px 12px; border-radius: 6px; margin-bottom: 15px;">
+    <img src="https://jianaturals.com/wp-content/uploads/2026/09/Courier_bike_logo_icon_design___Premium_AI-generated_vector-removebg-preview.png" width="22" height="22" alt="Delivery bike logo icon" style="object-fit: contain; flex-shrink: 0;">
+    <span style="font-size: 11px; font-weight: 700; color: var(--green2); line-height: 1.3;">Free delivery on minimum order of ₹1,000 (up to 7 km)</span>
+  </div>
+  <div class="cart-items" id="cartItems" aria-live="polite"></div>
+  <div class="cart-total" id="cartTotal">Total: &#8377;0</div>
+  <a class="cart-wa" id="cartWa" target="_blank" rel="noopener noreferrer" href="#">
+    <img src="https://jianaturals.com/wp-content/uploads/2026/09/—Pngtree—whatsapp-icon-whatsapp-logo-vector_3584844.png" width="24" height="24" class="btn-icon" alt="WhatsApp icon">
+    Order Cart on WhatsApp &rarr;
+  </a>
+</div>
+
+<!-- LAB REPORT LIGHTBOX -->
+<div class="lightbox" id="labLightbox" role="dialog" aria-modal="true" aria-labelledby="labLightboxTitle">
+  <div class="lightbox-content">
+    <button type="button" class="lightbox-close" onclick="window.jiaApp.closeLabReport()" aria-label="Close lab report">&times;</button>
+    <h2 id="labLightboxTitle" style="position:absolute;left:-9999px;">Product Lab Report</h2>
+    <img id="labLightboxImage" src="" alt="Product lab report view">
+  </div>
+</div>
+
+
+
+<!-- JIA NATURALS FOOTER -->
+<footer class="jia-footer-main">
+    <div class="jia-footer-container">
+        <div class="jia-footer-grid">
+
+            <!-- =================================================
+                 BRAND
+            ================================================= -->
+            <div>
+                <a
+                    href="/"
+                    class="jia-footer-brand"
+                    aria-label="JIA Naturals Home"
+                >
+                    <img
+                        src="https://jianaturals.com/wp-content/uploads/2026/09/ChatGPT_Image_Sep_9__2026__06_07_43_PM__1_-removebg-preview.png"
+                        alt="JIA Naturals"
+                        class="jia-footer-logo"
+                    >
+                    <div class="jia-footer-text-group">
+                        <span class="jia-footer-title">
+                            JIA NATURALS
+                        </span>
+                        <span class="jia-footer-sub">
+                            VISAKHAPATNAM
+                        </span>
+                    </div>
+                </a>
+
+                <p class="jia-footer-tagline">
+                    Traditionally pressed,<br>
+                    naturally pure.
+                </p>
+
+                <p class="jia-footer-desc">
+                    Dedicated to traditional Indian oil extraction
+                    and natural kitchen heritage. Pure, carefully
+                    prepared and presented for the modern home.
+                </p>
+            </div>
+
+            <!-- =================================================
+                 EXPLORE
+            ================================================= -->
+            <div class="jia-footer-col">
+                <h4>
+                    Explore
+                </h4>
+                <ul>
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/#oils">
+                            Cold-Pressed Oils
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/">
+                            Food Products
+                        </a>
+                    </li>
+                    <li>
+                        <!-- LINK UPDATED HERE TO NAVIGATE TO THE NEW PAGE -->
+                        <a href="/our-process/">
+                            Our Process
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/our-story">
+                            Our Story
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- =================================================
+                 CONTACT
+            ================================================= -->
+            <div class="jia-footer-col">
+                <h4>
+                    Contact Us
+                </h4>
+                <ul>
+                    <!-- PHONE -->
+                    <li>
+                        <a
+                            href="tel:+918639199011"
+                            class="jia-icon-row"
+                            aria-label="Call JIA Naturals"
+                        >
+                            <svg
+                                class="jia-svg-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2
+                                    19.79 19.79 0 0 1-8.63-3.07
+                                    19.5 19.5 0 0 1-6-6
+                                    19.79 19.79 0 0 1-3.07-8.67
+                                    A2 2 0 0 1 4.11 2h3
+                                    a2 2 0 0 1 2 1.72
+                                    12.84 12.84 0 0 0 .7 2.81
+                                    2 2 0 0 1-.45 2.11
+                                    L8.09 9.91a16 16 0 0 0 6 6
+                                    l1.27-1.27a2 2 0 0 1 2.11-.45
+                                    12.84 12.84 0 0 0 2.81.7
+                                    A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>
+                                +91 8639199011
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- EMAIL -->
+                    <li>
+                        <a
+                            href="mailto:work.jianaturals@gmail.com"
+                            class="jia-icon-row"
+                            aria-label="Email JIA Naturals"
+                        >
+                            <svg
+                                class="jia-svg-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12
+                                    c0 1.1-.9 2-2 2H4
+                                    c-1.1 0-2-.9-2-2V6
+                                    c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6">
+                                </polyline>
+                            </svg>
+                            <span>
+                                work.jianaturals@gmail.com
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- =================================================
+                         STORE
+                    ================================================= -->
+                    <li style="margin-top: 12px;">
+                        <a
+                            href="https://maps.app.goo.gl/two9pdE2BZ9MpPFd8"
+                            class="jia-store-locator-card"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Get directions to JIA Naturals"
+                        >
+                            <div class="jia-map-square-box">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M21 10c0 7-9 13-9 13
+                                        S3 17 3 10a9 9 0 1 1 18 0z">
+                                    </path>
+                                    <circle
+                                        cx="12"
+                                        cy="10"
+                                        r="3">
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div class="jia-store-text-group">
+                                <span class="jia-store-heading">
+                                    VISIT OUR STORE
+                                </span>
+                                <span class="jia-store-address">
+                                    MVP Colony, Visakhapatnam,<br>
+                                    Andhra Pradesh — 530017
+                                </span>
+                                <span class="jia-store-directions">
+                                    Get Directions →
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- =================================================
+                         INSTAGRAM
+                    ================================================= -->
+                    <li style="margin-top: 12px;">
+                        <a
+                            href="https://www.instagram.com/jianaturals"
+                            class="jia-icon-row"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Follow JIA Naturals on Instagram"
+                        >
+                            <svg
+                                class="jia-svg-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5">
+                                </rect>
+                                <path
+                                    d="M16 11.37A4 4 0 1 1
+                                    12.63 8 4 4 0 0 1 16 11.37z">
+                                </path>
+                                <line
+                                    x1="17.5"
+                                    y1="6.5"
+                                    x2="17.51"
+                                    y2="6.5">
+                                </line>
+                            </svg>
+                            <span class="jia-ig-text">
+                                Follow on Instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================= -->
+        <div class="jia-footer-bottom">
+            <span>
+                © 2026 JIA NATURALS. ALL RIGHTS RESERVED.
+            </span>
+            <span>
+                GSTIN: 37DDJPP3198F1Z2
+                &nbsp; | &nbsp;
+                FSSAI: 20126053001918
+            </span>
+        </div>
+    </div>
+</footer>
+
+<script data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1" data-pagespeed-no-defer nowprocket>
+/* ==========================================================================
+   JIA NATURALS — ROBUST CART + ACCESSIBLE INTERACTIONS
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  window.jiaApp = window.jiaApp || {};
+
+  const PHONE = "918639199011";
+  const STORAGE_KEY = "jiaCart";
+  const MAX_QTY = 99;
+  let jiaCart = [];
+
+  const $ = function(selector, root) {
+    if (!root) {
+      root = document;
+    }
+    return root.querySelector(selector);
+  };
+
+  const $$ = function(selector, root) {
+    if (!root) {
+      root = document;
+    }
+    return Array.from(root.querySelectorAll(selector));
+  };
+
+  function escapeHTML(str) {
+    let s = String(str);
+    s = s.replace(/&/g, "&amp;");
+    s = s.replace(/</g, "&lt;");
+    s = s.replace(/>/g, "&gt;");
+    s = s.replace(/"/g, "&quot;");
+    s = s.replace(/'/g, "&#39;");
+    return s;
+  }
+
+  function safePrices(card) {
+    try {
+      const prices = JSON.parse(card.dataset.prices || "{}");
+      if (prices) {
+        if (typeof prices === "object") {
+          return prices;
+        }
+      }
+      return {};
+    } catch (_) {
+      return {};
+    }
+  }
+
+  function clampQty(value) {
+    const n = Number(value);
+    if (Number.isFinite(n)) {
+      const clamped = Math.max(1, Math.min(MAX_QTY, Math.round(n)));
+      return clamped;
+    }
+    return 1;
+  }
+
+  function normalizeCart(items) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+    const filtered1 = items.filter(function(item) {
+      if (item) {
+        if (typeof item.name === "string") {
+          if (typeof item.size === "string") {
+            if (Number.isFinite(Number(item.unit))) {
+              return true;
+            }
+          }
+        }
+      }
+      return false;
+    });
+    const mapped = filtered1.map(function(item) {
+      const unit = Number(item.unit);
+      const qty = clampQty(item.qty);
+      return {
+        name: item.name.trim(),
+        size: item.size.trim(),
+        qty: qty,
+        unit: unit,
+        total: unit * qty
+      };
+    });
+    const filtered2 = mapped.filter(function(item) {
+      if (item.name) {
+        if (item.size) {
+          if (item.unit >= 0) {
+            return true;
+          }
+        }
+      }
+      return false;
+    });
+    return filtered2;
+  }
+
+  function saveCart() {
+    try {
+      const data = JSON.stringify(jiaCart);
+      localStorage.setItem(STORAGE_KEY, data);
+    } catch (_) {
+    }
+  }
+
+  function loadCart() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        jiaCart = normalizeCart(parsed);
+      } else {
+        jiaCart = [];
+      }
+    } catch (_) {
+      jiaCart = [];
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch (__) {
+      }
+    }
+    renderCart();
+  }
+
+  function productCard(btn) {
+    if (btn) {
+      if (btn.closest) {
+        return btn.closest(".product");
+      }
+    }
+    return null;
+  }
+
+  function recalc(card) {
+    if (!card) {
+      return;
+    }
+    const prices = safePrices(card);
+    const size = card.dataset.selected || Object.keys(prices)[0];
+    const unit = Number(prices[size]);
+    const qty = clampQty(card.dataset.qty || 1);
+    const output = $(".selected-price", card);
+
+    card.dataset.qty = String(qty);
+    if (output) {
+      if (Number.isFinite(unit)) {
+        const total = unit * qty;
+        output.textContent = "₹" + total.toLocaleString("en-IN");
+      }
+    }
+  }
+
+  window.jiaApp.recalc = recalc;
+
+  window.jiaApp.selectVariant = function (btn, size) {
+    const card = productCard(btn);
+    if (!card) {
+      return;
+    }
+    const prices = safePrices(card);
+    if (!(size in prices)) {
+      return;
+    }
+
+    const options = $$(".price-option", card);
+    options.forEach(function(option) {
+      const isActive = option === btn;
+      option.classList.toggle("active", isActive);
+      option.setAttribute("aria-pressed", String(isActive));
+    });
+
+    card.dataset.selected = size;
+    recalc(card);
+  };
+
+  window.jiaApp.changeQty = function (btn, delta) {
+    const card = productCard(btn);
+    if (!card) {
+      return;
+    }
+
+    const current = clampQty(card.dataset.qty || 1);
+    const next = Math.max(1, Math.min(MAX_QTY, current + Number(delta || 0)));
+    card.dataset.qty = String(next);
+
+    const value = $(".qty-value", card);
+    if (value) {
+      value.textContent = String(next);
+    }
+
+    recalc(card);
+  };
+
+  function addLine(name, size, unit, qty) {
+    const safeQty = clampQty(qty);
+    const safeUnit = Number(unit);
+    if (!name) { return false; }
+    if (!size) { return false; }
+    if (!Number.isFinite(safeUnit)) { return false; }
+    if (safeUnit < 0) { return false; }
+
+    const existing = jiaCart.find(function(item) {
+      if (item.name === name) {
+        if (item.size === size) {
+          return true;
+        }
+      }
+      return false;
+    });
+
+    if (existing) {
+      existing.qty = Math.min(MAX_QTY, existing.qty + safeQty);
+      existing.total = existing.qty * existing.unit;
+    } else {
+      const newItem = {
+        name: name,
+        size: size,
+        qty: safeQty,
+        unit: safeUnit,
+        total: safeUnit * safeQty
+      };
+      jiaCart.push(newItem);
+    }
+    return true;
+  }
+
+  function flashAdded(btn) {
+    if (btn.dataset.flashing) {
+      return;
+    }
+    btn.dataset.flashing = "true";
+    const badge = document.getElementById("cartBadge");
+    if (badge) {
+      badge.classList.add("bump");
+      setTimeout(function () {
+        badge.classList.remove("bump");
+      }, 300);
+    }
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = "Added ✓";
+    setTimeout(function () {
+      btn.innerHTML = originalHTML;
+      btn.removeAttribute("data-flashing");
+    }, 1000);
+  }
+
+  window.jiaApp.addToCart = function (btn) {
+    const card = productCard(btn);
+    if (!card) {
+      return;
+    }
+
+    const prices = safePrices(card);
+    const size = card.dataset.selected || Object.keys(prices)[0];
+    const unit = Number(prices[size]);
+    const qty = clampQty(card.dataset.qty || 1);
+
+    const added = addLine(card.dataset.name, size, unit, qty);
+    if (!added) {
+      return;
+    }
+
+    saveCart();
+    renderCart();
+    flashAdded(btn);
+  };
+
+  window.jiaApp.addFoodToCart = function (btn) {
+    let item = null;
+    if (btn) {
+      if (btn.closest) {
+        item = btn.closest(".food-item");
+      }
+    }
+    if (!item) {
+      return;
+    }
+
+    const added = addLine(item.dataset.name, item.dataset.size, Number(item.dataset.price), 1);
+    if (!added) {
+      return;
+    }
+
+    saveCart();
+    renderCart();
+    flashAdded(btn);
+  };
+
+  window.jiaApp.updateCartItem = function (index, delta) {
+    const item = jiaCart[index];
+    if (!item) {
+      return;
+    }
+
+    item.qty = Math.max(1, Math.min(MAX_QTY, item.qty + delta));
+    item.total = item.qty * item.unit;
+    saveCart();
+    renderCart();
+  };
+
+  window.jiaApp.removeCartItem = function (index) {
+    if (!jiaCart[index]) {
+      return;
+    }
+    jiaCart.splice(index, 1);
+    saveCart();
+    renderCart();
+  };
+
+  function renderCart() {
+    const box = $("#cartItems");
+    const badge = $("#cartBadge");
+    const totalBox = $("#cartTotal");
+    const cartWa = $("#cartWa");
+    if (!box) { return; }
+    if (!badge) { return; }
+    if (!totalBox) { return; }
+    if (!cartWa) { return; }
+
+    let total = 0;
+    let totalItems = 0;
+
+    if (!jiaCart.length) {
+      box.innerHTML = '<p style="font-size:13px;color:#777;margin:0;">Your cart is empty.</p>';
+    } else {
+      const htmlArray = jiaCart.map(function(item, index) {
+        total += item.total;
+        totalItems += item.qty;
+        const escapedName = escapeHTML(item.name);
+        const escapedSize = escapeHTML(item.size);
+        const priceStr = item.unit.toLocaleString("en-IN");
+        const totalStr = item.total.toLocaleString("en-IN");
+        const disMinus = item.qty <= 1 ? "disabled" : "";
+        const disPlus = item.qty >= MAX_QTY ? "disabled" : "";
+        return `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <span class="cart-item-title" style="font-weight:800; color:var(--green); font-size:13px;">${escapedName}</span>
+              <span class="cart-item-meta" style="color:var(--muted); font-size:11px;">${escapedSize} · ₹${priceStr} each</span>
+            </div>
+            <div class="cart-item-controls" style="display:flex; align-items:center; gap:10px; margin-top:5px;">
+              <div class="cart-qty-box" style="display:flex; align-items:center; border:1px solid #ddd; border-radius:4px; overflow:hidden;">
+                <button type="button" style="width:24px; height:24px; background:#f5f5f5; border:none; color:var(--green); font-weight:800; cursor:pointer;" onclick="window.jiaApp.updateCartItem(${index}, -1)" ${disMinus}>&minus;</button>
+                <span style="min-width:24px; text-align:center; font-size:11px; font-weight:800;">${item.qty}</span>
+                <button type="button" style="width:24px; height:24px; background:#f5f5f5; border:none; color:var(--green); font-weight:800; cursor:pointer;" onclick="window.jiaApp.updateCartItem(${index}, 1)" ${disPlus}>+</button>
+              </div>
+              <button type="button" class="cart-remove-btn" onclick="window.jiaApp.removeCartItem(${index})" aria-label="Remove item" style="border:0; background:none; color:#dc3545; cursor:pointer; font-size:18px; padding:5px;">&times;</button>
+              <div style="margin-left:auto; font-weight:800; color:var(--green); font-size:13px;">₹${totalStr}</div>
+            </div>
+          </div>
+        `;
+      });
+      box.innerHTML = htmlArray.join("");
+    }
+
+    if (totalItems > 99) {
+      badge.textContent = "99+";
+    } else {
+      badge.textContent = String(totalItems);
+    }
+    
+    totalBox.textContent = "Total: ₹" + total.toLocaleString("en-IN");
+
+    const linesArray = jiaCart.map(function(item) {
+      const tStr = item.total.toLocaleString("en-IN");
+      return `${item.name} - ${item.size} - Qty ${item.qty} - ₹${tStr}`;
+    });
+    const lines = linesArray.join("\n");
+    
+    let message = "";
+    if (jiaCart.length) {
+      const overallStr = total.toLocaleString("en-IN");
+      message = `Hello JIA NATURALS, I would like to order:\n\n${lines}\n\nEstimated Total: ₹${overallStr}\n\nPlease share the payment details and next steps.`;
+    }
+
+    if (message) {
+      cartWa.href = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(message);
+      cartWa.style.pointerEvents = "auto";
+      cartWa.style.opacity = "1";
+    } else {
+      cartWa.href = "#";
+      cartWa.style.pointerEvents = "none";
+      cartWa.style.opacity = "0.5";
+    }
+  }
+
+  window.jiaApp.openCart = function () {
+    const drawer = $("#cartDrawer");
+    const overlay = $("#cartOverlay");
+    if (!drawer) { return; }
+    if (!overlay) { return; }
+    
+    drawer.style.display = "flex";
+    overlay.style.display = "block";
+    document.body.style.overflow = "hidden";
+    const btn = $(".float-cart");
+    if (btn) {
+      btn.setAttribute("aria-expanded", "true");
+    }
+  };
+
+  window.jiaApp.closeCart = function () {
+    const drawer = $("#cartDrawer");
+    const overlay = $("#cartOverlay");
+    if (!drawer) { return; }
+    if (!overlay) { return; }
+    
+    drawer.style.display = "none";
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+    const btn = $(".float-cart");
+    if (btn) {
+      btn.setAttribute("aria-expanded", "false");
+    }
+  };
+
+  window.jiaApp.openLightbox = function (url) {
+    const lightbox = $("#labLightbox");
+    const image = $("#labLightboxImage");
+    if (!lightbox) { return; }
+    if (!image) { return; }
+    
+    image.src = url;
+    lightbox.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.jiaApp.closeLabReport = function () {
+    const lightbox = $("#labLightbox");
+    if (!lightbox) { return; }
+    
+    lightbox.style.display = "none";
+    document.body.style.overflow = "";
+    setTimeout(function () {
+      const img = $("#labLightboxImage");
+      if (img) {
+        img.removeAttribute("src");
+      }
+    }, 200);
+  };
+
+  window.jiaApp.orderWhatsApp = function (btn) {
+    const card = productCard(btn);
+    if (!card) {
+      return;
+    }
+
+    const prices = safePrices(card);
+    const size = card.dataset.selected || Object.keys(prices)[0];
+    const unit = Number(prices[size]);
+    const qty = clampQty(card.dataset.qty || 1);
+    
+    if (!Number.isFinite(unit)) {
+      return;
+    }
+
+    const total = unit * qty;
+    const uStr = unit.toLocaleString("en-IN");
+    const tStr = total.toLocaleString("en-IN");
+    const msg = `Hello JIA NATURALS, I would like to order:\n\nProduct: ${card.dataset.name}\nSize: ${size}\nQuantity: ${qty}\nUnit Price: ₹${uStr}\nTotal: ₹${tStr}\n\nPlease share the next steps for my order.`;
+
+    const dest = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg);
+    window.open(dest, "_blank", "noopener,noreferrer");
+  };
+
+  /* Close overlays on outside click */
+  document.addEventListener("click", function (event) {
+    const ov = $("#cartOverlay");
+    if (event.target === ov) {
+      window.jiaApp.closeCart();
+    }
+    const lb = $("#labLightbox");     if (event.target === lb) {       window.jiaApp.closeLabReport();     }   });    /* Close on Escape key */   document.addEventListener("keydown", function (event) {     if (event.key === "Escape") {       window.jiaApp.closeCart();       window.jiaApp.closeLabReport();     }   });    /* Init */   function init() {     const products = $$(".product");
+    products.forEach(recalc);
+    loadCart();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+</body>
+</html>
